@@ -29,5 +29,5 @@ dev = [
 ]
 
 [build-system]
-requires = ["uv"]
-build-backend = "uv.build"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
