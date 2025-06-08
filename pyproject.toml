@@ -1,0 +1,33 @@
+[project]
+name = "c-mod-gen"
+version = "0.1.0"
+description = "A simple CLI tool for scaffolding C modules"
+authors = [
+    { name = "Cory Coward", email = "corycoward80@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jinja2>=3.1.6",
+    "typer>=0.16.0",
+]
+
+[project.scripts]
+cgen = "c_mod_gen.cli:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.16.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.16.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.13",
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
