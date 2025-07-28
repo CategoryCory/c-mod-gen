@@ -1,4 +1,4 @@
-from c_mod_gen.render import render_header, render_implementation
+from src.c_mod_gen.render import render_header, render_implementation
 
 def test_render_header_basic() -> None:
     content = render_header("foo")

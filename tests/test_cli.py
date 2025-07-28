@@ -1,7 +1,7 @@
 from pathlib import Path
 from pytest import MonkeyPatch
 from typer.testing import CliRunner
-from c_mod_gen.cli import app
+from src.c_mod_gen.cli import app
 
 runner = CliRunner()
 
